@@ -20,7 +20,7 @@ ln -sf $(pwd)/custom.* $(ipython locate)/profile_sympy/static/custom
 
 ln -sf $(pwd)/extensions/* $(ipython locate)/extensions
 ln -sf $(pwd)/nbextensions/* $(ipython locate)/nbextensions
-ln -sf $(pwd)/profile_default/*.py $(ipython locate)/profile_default
-ln -sf $(pwd)/profile_sympy/*.py $(ipython locate)/profile_sympy
+ln -sf $(pwd)/_profile_default/*.py $(ipython locate)/profile_default
+ln -sf $(pwd)/_profile_sympy/*.py $(ipython locate)/profile_sympy
 
 #*********************************************************************** END ***
