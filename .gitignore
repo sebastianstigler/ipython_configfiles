@@ -1,0 +1,11 @@
+
+profile_default/log
+profile_default/pid
+profile_default/security
+profile_default/startup
+profile_default/static
+profile_sympy/log
+profile_sympy/pid
+profile_sympy/security
+profile_sympy/startup
+profile_sympy/static
