@@ -15,12 +15,13 @@ mkdir -p $(ipython locate)/profile_sympy/static/custom/
 mkdir -p $(ipython locate)/extensions
 mkdir -p $(ipython locate)/nbextensions
 
-ln -sf $(pwd)/custom.* $(ipython locate)/profile_default/static/custom
-ln -sf $(pwd)/custom.* $(ipython locate)/profile_sympy/static/custom
+ln -sf $(pwd)/custom.css $(ipython locate)/profile_default/static/custom
+ln -sf $(pwd)/custom.css $(ipython locate)/profile_sympy/static/custom
 
 ln -sf $(pwd)/extensions/* $(ipython locate)/extensions
-ln -sf $(pwd)/nbextensions/* $(ipython locate)/nbextensions
 ln -sf $(pwd)/_profile_default/*.py $(ipython locate)/profile_default
 ln -sf $(pwd)/_profile_sympy/*.py $(ipython locate)/profile_sympy
 
+python nbextensions/setup install --profile default
+python nbextensions/setup install --profile sympy
 #*********************************************************************** END ***

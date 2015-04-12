@@ -36,7 +36,7 @@ define(["require"], function (require) {
 	var link = document.createElement("link");
 	link.type = "text/css";
 	link.rel = "stylesheet";
-	var path = './calico-spell-check.css';
+	var path = './main.css';
 	link.href = require.toUrl(path);
 	document.getElementsByTagName("head")[0].appendChild(link);
     };
@@ -102,7 +102,7 @@ define(["require"], function (require) {
 	}
 
 	// Load dictionary:
-	require(["nbextensions/typo/typo"], function () {
+	require(["nbextensions/calico-spell-check/typo/typo"], function () {
 	    var lang = "en_US";
 	    var lang = "de_DE";
 	    var dict_path = require.toUrl("./typo/dictionaries/");
