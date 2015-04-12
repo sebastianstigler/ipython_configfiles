@@ -12,27 +12,12 @@
     font-family: "Computer Modern";
     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
 }
-.text_cell_render p code {
-
-	background-color:#f0f0f0;
-}
-
-#notebook_panel { /* main background */
-    background: #888;
-    color: #f6f6f6;
-}
 
 /*
 #div.cell { /* set cell width to about 80 chars */
 /*#    width: 800px;
 }
 */
-div #notebook { /* centre the content */
-    background: #fff; /* white background for content */
-    #width: 1024px;
-    margin: auto;
-    padding-left: 1em;
-}
 
 #notebook li { /* More space between bullet points */
 margin-top:0.8em;
@@ -41,14 +26,6 @@ margin-top:0.8em;
 /* draw border around running cells */
 div.cell.border-box-sizing.code_cell.running { 
     border: 3px solid #111;
-}
-
-/* Put a solid color box around each cell and its output, visually linking them together */
-div.cell.code_cell {
-   /* background-color: rgba(171,165,131,1.0); */
-    border-radius: 10px; /* rounded borders */
-    padding: 1em;
-    margin-top: 1em;
 }
 
 div.text_cell_render{
