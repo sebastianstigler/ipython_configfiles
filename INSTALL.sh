@@ -22,6 +22,6 @@ ln -sf $(pwd)/extensions/* $(ipython locate)/extensions
 ln -sf $(pwd)/_profile_default/*.py $(ipython locate)/profile_default
 ln -sf $(pwd)/_profile_sympy/*.py $(ipython locate)/profile_sympy
 
-python nbextensions/setup install --profile default
-python nbextensions/setup install --profile sympy
+python nbextensions/setup.py install --profile default
+python nbextensions/setup.py install --profile sympy
 #*********************************************************************** END ***
