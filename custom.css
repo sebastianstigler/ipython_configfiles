@@ -97,4 +97,12 @@ div.text_cell_render{
         font-size: 100%;
 }
 
+.reveal pre {
+    overflow: hidden;
+}
+
+.reveal pre code {
+    background-color: #eee;
+}
+
 </style>
