@@ -1,0 +1,4 @@
+---
+# Put here the nbextension which is to be disabled on default
+
+navigation-hotkeys: false
